@@ -1,0 +1,62 @@
+Version 1:
+Hi ChatGPT, I need to write a python application on Windows that can take an excel file (SimplySails.xlsx) and answer the following questions:
+How many hours can each sailboat model go for before they need maintenance?
+Which sailboat can go the longest without maintenance?
+Which sailboat has the cheapest maintenance with the most hours on the water? Provide the data showing each sailboat model.
+
+The data is broken into 3 worksheets:
+Worksheet: Sailboat Activities
+Columns: Boat Model, Serial Number, Date, Entry Type, Hours, Maintenance Session
+------------------------------
+Worksheet: Maintenance Sessions
+Columns: Maintenance Session, Date, Boat Model, Serial Number, Maintenance Code
+------------------------------
+Worksheet: Maintenance Codes
+Columns: Boat Model, Maintenance Code, Total Maintenance Cost ($)
+
+Key callouts to keep in mind:
+The Entry Type is either Sailing or Maintenance.  If its sailing, then its on the water.
+Maintenance Session is a string identifier that allows us to look up the Maintenance Codes per session. 
+Maintenance Codes tells us what the cost of the Maintenance Session was. 
+The cost depends on the Boat Model.
+The Boat Model column exists in all three worksheets.
+
+
+Version 2:
+Hi ChatGPT, I need to write a python application on Windows that can take an excel file (SimplySails.xlsx) in the same directory and answer the following questions:
+How many hours can each sailboat model go for before they need maintenance?
+Which sailboat can go the longest without maintenance?
+
+The data is broken into 3 worksheets:
+Worksheet: Sailboat Activities
+Columns: Boat Model, Serial Number, Date, Entry Type, Hours, Maintenance Session
+------------------------------
+Worksheet: Maintenance Sessions
+Columns: Maintenance Session, Date, Boat Model, Serial Number, Maintenance Code
+------------------------------
+Worksheet: Maintenance Codes
+Columns: Boat Model, Maintenance Code, Total Maintenance Cost ($)
+
+Key callouts to keep in mind:
+The Entry Type is either Sailing or Maintenance.  If its sailing, then its on the water.
+Maintenance Session is a string identifier that allows us to look up the Maintenance Codes per session. 
+Maintenance Codes tells us what the cost of the Maintenance Session was. 
+The maintenance cost depends on the Boat Model.
+The Boat Model column exists in all three worksheets.
+
+Version 3 (Current):
+Hi ChatGPT, I need to write a python application on Windows that can take an excel file (SimplySails.xlsx) in the same directory and answer the following questions:
+Which boat has the most maintenance?
+
+The data has a worksheet named Sailboat Activities.  It has the following columns: Boat Model, Serial Number, Date, Entry Type, Hours, Maintenance Session
+
+
+Column Descriptions:
+Boat Model is the type of boat and is not unique.
+Serial Number is the unique identifier of each boat. 
+Date is when the entry happened. 
+Entry Type is either Sailing or Maintenance.  If its sailing, then its on the water.
+Hours is either hours spent in Maintenance or hours spent sailing.  It depends on the Entry Type.
+Maintenance Session is a unique identifier of the maintenance session.
+
+Please provide in one code snippet.
